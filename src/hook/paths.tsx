@@ -1,10 +1,11 @@
 import { TeamOutlined, UngroupOutlined, UnorderedListOutlined, UserOutlined } from "@ant-design/icons"
 import NotFound from "../pages/Dashboard/NotFound"
 import { Groups, Home, Major, Students, Teachers } from "../pages/Dashboard"
+import { NavLink } from "react-router-dom"
 
 export const paths = {
   home: "/",
-  signin: "/signin",
+  signIn: "/sign-in",
   major: "/major",
   groups: "/groups",
   students: "/students",
@@ -47,23 +48,25 @@ export const DashboardRouteList = [
 
 export const DashboardNavList = [
   {
-    id: 1,
-    title: "Yo'nalishlar",
-    icon: <UnorderedListOutlined />
-  },
-  {
-    id: 2,
-    title: "Guruhlar",
-    icon: <UngroupOutlined />
-  },
-  {
-    id: 3,
-    title: "O'quvchilar",
-    icon: <TeamOutlined />
-  },
-  {
-    id: 4,
-    title: "Ustozlar",
-    icon: <UserOutlined />
-  }
+    key:1,
+    label:<NavLink to={paths.major}>Yo'nalishlar</NavLink>,
+    icon:<UnorderedListOutlined />,
+},
+{
+    key:2,
+    label:<NavLink to={paths.groups}>Guruxlar</NavLink>,
+    icon:<UngroupOutlined />
+},
+{
+    key:3,
+    label:<NavLink to={paths.students}>O'quvchilar</NavLink>,
+    icon:<TeamOutlined />
+},
+{
+    key:4,
+    label:<NavLink to={paths.teachers}>Ustozlar</NavLink>,
+    icon:<UserOutlined />
+},
 ]
+
+
