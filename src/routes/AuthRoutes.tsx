@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom"
 import { paths } from "../hook/paths"
-import { Home } from "../pages/Dashboard"
-import { SignIn } from "../pages/Auth"
+import { Home, SignIn } from "../pages/Auth"
+
 
 
 
