@@ -1,5 +1,5 @@
 import { Logo } from "../../assets/icons"
-import SignInForm from "../../components/SingInForm"
+import SignInForm from "../../components/SignInForm"
 
 const SignIn = () => {
   return (

@@ -5,8 +5,9 @@
 }
 body{
     background-color: #e0e0e0;
+    overflow-y: hidden;
 }
-.ant-btn-primary, .ant-menu-item-selected{
+.ant-btn-primary, .ant-menu-item-selected, .ant-switch.ant-switch-checked {
     background-color: var(--clr-gold) !important;
 }
 .ant-input-affix-wrapper-focused, .ant-input-outlined:hover{
@@ -16,7 +17,14 @@ body{
 .ant-input-outlined:focus{
     box-shadow: 0 0 0 2px #bc8f5b4b !important;
 }
-.ant-btn-default:hover{
+.ant-btn-default:hover, .ant-pagination-item-active{
     border-color: var(--clr-gold) !important;
     color: var(--clr-gold) !important;
+}
+.ant-pagination-item-active > a, .ant-spin-dot{
+    color:var(--clr-gold) !important;
+}
+
+.ant-select-disabled .ant-select-selection-item{
+    color: black !important;
 }
